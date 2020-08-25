@@ -90,6 +90,7 @@ public class downloadFragment extends Fragment {
 
     }
 
+    //check
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
