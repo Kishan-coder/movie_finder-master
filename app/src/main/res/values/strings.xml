@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cinéaste</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="API_KEY">AIzaSyDFmuHGyLnN1fNOSpSG6lsveHvBBDcy3Hg</string>
+</resources>

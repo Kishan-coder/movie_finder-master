@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/video"
+    android:layout_width="match_parent"
+    android:background="@drawable/back"
+    android:layout_height="140dp">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="-4dp"
+        android:layout_width="174dp"
+        android:layout_height="130.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/video_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="7dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:gravity="center"
+        android:textColor="@color/stdOrange"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="6sp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeStepGranularity="2sp"
+        />
+
+</RelativeLayout>

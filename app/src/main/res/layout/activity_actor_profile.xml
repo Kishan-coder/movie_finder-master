@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActorProfile">
+
+    <TextView
+        android:id="@+id/DefaultText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Sorry but we don't have the data for the film personality you searched for!!"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="40sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/DefaultText"
+        android:gravity="center"
+        android:text="Default"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/colorPrimaryDark"
+        app:autoSizeTextType="uniform"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:autoSizeStepGranularity="2sp" />
+<FrameLayout
+    android:id="@+id/photo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/title"
+    android:layout_marginLeft="110dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="110dp"
+    android:layout_marginBottom="14dp"
+    android:background="@color/trend">
+    <ImageView
+        android:id="@+id/Photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@color/colorAccent"
+        android:layout_margin="1dp"
+         />
+</FrameLayout>
+    <TextView
+        android:id="@+id/bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/photo"
+        android:gravity="center"
+        android:scrollbars = "vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-20dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="sans-serif-light"
+        android:textSize="18sp" />
+</RelativeLayout>
+</ScrollView>

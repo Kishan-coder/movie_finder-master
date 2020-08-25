@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "924083634347",
+    "firebase_url": "https://cineaste-b2031.firebaseio.com",
+    "project_id": "cineaste-b2031",
+    "storage_bucket": "cineaste-b2031.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924083634347:android:a21c7aeab3c707d90cb7ee",
+        "android_client_info": {
+          "package_name": "com.example.lenovo.retrofit_check"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924083634347-41jtgp09cgtrpgfhgd07sebkc7kga96v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lenovo.retrofit_check",
+            "certificate_hash": "26b10eeb60203ac176818087b490c764fb5ae55c"
+          }
+        },
+        {
+          "client_id": "924083634347-82sneqq2jf80dbst25q18f8e9vgbt3ja.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOO6iOU9piuU8U1NET3tvJNEMiNPedh-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924083634347-82sneqq2jf80dbst25q18f8e9vgbt3ja.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

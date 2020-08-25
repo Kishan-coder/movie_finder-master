@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:focusableInTouchMode="true"
+    tools:context=".ToDoList">
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="12dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="20dp"
+        android:paddingRight="12dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="It appears that your ToDo List is empty!\n\n1. To add movies, Scroll down in the movie info. page and click on 'Add to my To-Do List'.\n2. To delete any movie from your To-Do List, long-press it."
+        android:textAlignment="center"
+        android:textColor="@color/trend"
+        android:visibility="gone"
+        app:autoSizeTextType="uniform"></TextView>
+
+    <RelativeLayout
+        android:id="@+id/rvVis"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="51dp"
+    android:id="@+id/ll"
+    android:layout_marginLeft="6dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginRight="6dp">
+        <AutoCompleteTextView
+            android:id="@+id/searchview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:lines="1"
+            android:nextFocusLeft="@id/searchview"
+            android:nextFocusUp="@id/searchview"
+            android:singleLine="true"
+            android:textColor="@color/trend"
+            android:textColorHint="@color/trend"
+            android:textSize="24sp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/stack"
+        android:visibility="gone"
+        android:layout_marginRight="-6dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="j.json"
+        app:lottie_loop="true"
+        android:layout_weight="10"></com.airbnb.lottie.LottieAnimationView>
+</LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll"
+            android:background="@color/colorAccent"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarThumbVertical="@color/colorAccent"
+            android:scrollbars="vertical" />
+    </RelativeLayout>
+</RelativeLayout>

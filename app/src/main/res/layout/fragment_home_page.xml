@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightAxent"
+    android:orientation="vertical"
+    tools:context=".HomePage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Search A Movie"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#424242"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            app:autoSizeTextType="uniform" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="search.json"
+            app:lottie_loop="true"></com.airbnb.lottie.LottieAnimationView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="1">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="newrele.json"
+            app:lottie_loop="true"></com.airbnb.lottie.LottieAnimationView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:background="@color/colorAccent"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="New Releases"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#424242"
+            app:autoSizeTextType="uniform" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="All Time Favourites"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#424242"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            app:autoSizeTextType="uniform" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="alltime.json"
+            app:lottie_loop="true"></com.airbnb.lottie.LottieAnimationView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="1">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="coming.json"
+            app:lottie_loop="true"></com.airbnb.lottie.LottieAnimationView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:background="@color/colorAccent"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Coming Soon..."
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#424242"
+            app:autoSizeTextType="uniform" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:padding="2dp"
+            android:text="Talk With Cinéaste"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#424242"
+            app:autoSizeTextType="uniform" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="36dp"
+            android:layout_weight="3"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="dots.json"
+            app:lottie_loop="true"></com.airbnb.lottie.LottieAnimationView>
+
+    </LinearLayout>
+</LinearLayout>

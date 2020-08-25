@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_msg_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/ll"
+    android:layout_marginRight="80dp"
+    android:layout_marginBottom="0.6dp"
+    android:background="@drawable/bhagwaan2"
+    >
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_weight="1"
+        android:gravity="start|center"
+        android:textColor="@color/colorPrimaryDark"
+        ></TextView>
+    <TextView
+        android:id="@+id/extras"
+        android:visibility="gone"
+        android:textSize="16dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Click here to see all!"
+        android:gravity="start|center"
+        android:textColor="@color/colorPrimaryDark"
+        >
+    </TextView>
+</LinearLayout>
+</RelativeLayout>

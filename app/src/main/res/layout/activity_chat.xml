@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFCC80"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linearLayout1"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="2dp"
+        android:scrollbars="none"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:baselineAligned="true"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp">
+
+        <EditText
+            android:id="@+id/textInput"
+            android:layout_weight="1"
+            android:hint="Write your message here..."
+            android:paddingLeft="10dp"
+            android:inputType="textMultiLine"
+            android:maxLength="2000"
+            android:scrollHorizontally="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="21dp"
+
+        android:gravity="top|left"
+        android:maxLines="3"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:scrollbars="vertical" >
+        </EditText>
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btnSend"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/ic_send_black_24dp"
+            android:textSize="20sp"></Button>
+    </LinearLayout>
+</RelativeLayout>
